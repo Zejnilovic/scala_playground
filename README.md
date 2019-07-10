@@ -1,1 +1,4 @@
-# scala_playground
+# scala_playground 
+alfa
+beta 
+gama
