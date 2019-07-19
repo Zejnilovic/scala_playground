@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Usage 1.1.0
+title: Usage
+version: '1.1.0'
 categories: 
     - 1.1.0
 ---

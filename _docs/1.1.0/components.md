@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Components 1.1.0
+title: Components
+version: '1.1.0'
 categories:
     - '1.1.0'
 ---

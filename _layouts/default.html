@@ -2,13 +2,9 @@
 <html>
   {% include head.html %}
   <body>
-    <div class="holy-grail-grid">
-      {% include header.html %}
-      {% include navigation.html %}
-      <div class="holy-grail-middle">
-          {{ content }}
-      </div>
-      {% include footer.html %}
-    </div>
+    {% include header.html %}
+    {% include navigation.html %}
+    {{ content }}
+    {% include footer.html %}
   </body>
 </html>
