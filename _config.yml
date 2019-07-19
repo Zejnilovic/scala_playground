@@ -1,0 +1,9 @@
+name: Enceladus
+description: Dynamic Conformance Engine
+
+collections:
+  docs:
+    title: Documentation
+    description: A collection of documentation pages for each version
+    output: true
+    permalink: :collection/:categories/:name

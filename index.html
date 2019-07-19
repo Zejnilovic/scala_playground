@@ -1,10 +1,21 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
-</html>
+---
+layout: default
+title: MainPage
+---
+<h1>Hello World!</h1>
+
+alfa beta gama <br />
+{% for item in site.docs %}
+{{ item.url }}<br />
+{% endfor %}
+
+<br /><br /><br />
+
+{{ site.data.versions[1] }}
+
+
+<br /><br /><br />
+
+{% for version in site.data.versions %}
+	<a href="/docs/{{version}}/usage">{{version}}</a><br />
+{% endfor %}
