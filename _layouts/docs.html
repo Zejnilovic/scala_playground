@@ -1,5 +1,21 @@
 ---
 layout: default
 ---
+{% if page.version %}
+    <div id="choose-version">
+        <label>Choose version:</label>
+        <select id="nav-version">
+            {% for version in site.data.versions %}
+            <option value="{{ version }}" {% if page.url contains version %}selected{% endif %}>{{ version }}</option>
+            {% endfor %}
+        </select>
 
+        <script type="text/javascript">
+            document.getElementById("nav-version").onchange = function() {
+                var selectedOption = this.value;
+                window.location.href = "{{ site.url }}{{ site.baseurl }}/docs/" + selectedOption + "/{{ page.title | downcase }}" ;
+            }
+        </script>
+    </div>
+{% endif %}
 {{ content }}

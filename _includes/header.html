@@ -1,29 +1,11 @@
-<header>
-    <div id="logo">
-        <a href="{{ site.baseurl }}" id="logo">
-            <img src="/assets/images/logo.jpeg"/>
-        </a> 
-    </div>
+<header class="container">
+    <div class="row bordered-header">
+        <div id="logo" class="col-sm-4 col-lg-3 media">
+            <a href="{{ site.baseurl }}" id="logo">
+                <img class="img-fluid" src="/assets/images/logo.png" class="mr-3"/>
+            </a> 
+        </div>
 
-    <div id="title">
-        <h1 id=title-text>{{ page.title }}</h1>
-
-        {% if page.version %}
-            <div id="choose-version">
-                <label>Choose version:</label>
-                <select id="nav-version">
-                    {% for version in site.data.versions %}
-                    <option value="{{ version }}" {% if page.url contains version %}selected{% endif %}>{{ version }}</option>
-                    {% endfor %}
-                </select>
-
-                <script type="text/javascript">
-                    document.getElementById("nav-version").onchange = function() {
-                        var selectedOption = this.value;
-                        window.location.href = "{{ site.url }}{{ site.baseurl }}/docs/" + selectedOption + "/{{ page.title | downcase }}" ;
-                    }
-                </script>
-            </div>
-        {% endif %}
+        <h1 id=title-text class="col-sm-4 col-lg-6 my-auto">{{ page.title }}</h1>
     </div>
 </header>
