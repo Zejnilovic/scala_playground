@@ -7,3 +7,7 @@ collections:
     description: A collection of documentation pages for each version
     output: true
     permalink: :collection/:categories/:name
+
+plugins:
+  # https://help.github.com/en/articles/mentions-on-github-pages
+  - jekyll-mentions

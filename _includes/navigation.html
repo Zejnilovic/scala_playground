@@ -6,6 +6,7 @@
     {% else %}
         {% assign v = site.data.versions.last %}
     {% endif %}
+    
     <ul class="nav flex-column nav-pills nav-fill">
         <!-- <li class="nav-item "><a class="nav-link" href="https://github.com/AbsaOSS">AbsaOss</a></li> -->
         <li class="nav-item ">
@@ -29,23 +30,29 @@
                 href="{{ site.baseurl }}/docs/{{ v }}/usage">Usage</a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link {% if page.title == "About" %}active{% endif %}"
+            <a class="nav-link {% if page.title == "About Us" %}active{% endif %}"
                 href="{{ site.baseurl }}/about">About Us</a>
         </li>
     </ul>
 
-    <ul id="shortcuts" class="nav">
-        <li class="nav-item">
-            <i class="fab fa-github fa-2x"></i>
-            <p>Github</p>
+    <ul id="shortcuts" class="list-inline d-flex justify-content-between p-2">
+        <li class="list-inline-item text-center">
+            <a href="https://github.com/AbsaOSS/enceladus" target="_blank" class="text-dark">
+                <i class="fab fa-github fa-2x"></i>
+                <p>Github</p>
+            </a>
         </li>
-        <li>
-            <i class="fas fa-bug fa-2x"></i>
-            <p>Issues</p>
+        <li class="list-inline-item text-center">
+            <a href="https://github.com/AbsaOSS/enceladus/issues" target="_blank" class="text-dark">
+                <i class="fas fa-bug fa-2x"></i>
+                <p>Issues</p>
+            </a>
         </li>
-        <li>
-            <i class="fas fa-file-archive fa-2x"></i>
-            <p>Maven</p>
+        <li class="list-inline-item text-center">
+            <a href="https://mvnrepository.com/artifact/za.co.absa" target="_blank" class="text-dark">
+                <i class="fas fa-file-archive fa-2x"></i>
+                <p>Maven</p>
+            </a>
         </li>
     </ul>
 </nav>

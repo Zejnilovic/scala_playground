@@ -1,7 +1,5 @@
 ---
 layout: default
-title: About
+title: About Us
 ---
-# About page
-
 This page tells you a little bit about us.
