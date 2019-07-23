@@ -1,6 +1,6 @@
-<h3>Navigation</h3>
-<nav>
-    {{ site.data.versions.last }}
+<nav class="main-nav">
+    <h3>Navigation</h3>
+
     {% if page.version %}
         {% assign v = page.version %}
     {% else %}
@@ -10,5 +10,11 @@
         <li><a href="{{ site.baseurl }}/">Home</a></li>
         <li><a href="{{ site.baseurl }}/docs/{{ v }}/components">Components</a></li>
         <li><a href="{{ site.baseurl }}/docs/{{ v }}/usage">Usage</a></li>
+    </ul>
+
+    <ul id="shortcuts">
+        <li>
+            <i class="fab fa-github fa-3x"></i>
+        </li>
     </ul>
 </nav>

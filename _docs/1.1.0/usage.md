@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Usage
 version: '1.1.0'
 categories: 

@@ -1,9 +1,9 @@
 ---
 layout: default
-title: MainPage
+title: Main Page
 ---
 <h1>Hello World!</h1>
-
+<p>
 alfa beta gama <br />
 {% for item in site.docs %}
 {{ item.url }}<br />
@@ -19,3 +19,5 @@ alfa beta gama <br />
 {% for version in site.data.versions %}
 	<a href="{{ site.baseurl }}/docs/{{version}}/usage">{{version}}</a><br />
 {% endfor %}
+
+</p>
