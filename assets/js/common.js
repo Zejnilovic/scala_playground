@@ -1,6 +1,10 @@
-if (!!document.getElementById("nav-version")) {
-  document.getElementById("nav-version").onchange = function() {
-    var selectedOption = this.value;
-    window.location.href = "{{ site.url }}{{ site.baseurl }}/docs/" + selectedOption + "/{{ page.title | downcase | replace: ' ','-'}}" ;
-  }
+---
+---
+
+function switchVersion(selectedOption, urlPostfix) {
+  // document.getElementById("nav-version").onchange = function() {
+    console.log(selectedOption)
+    console.log(urlPostfix)
+    window.location.href = "{{ site.url }}{{ site.baseurl }}/docs/" + selectedOption + "/" + urlPostfix;
+  // }
 }
